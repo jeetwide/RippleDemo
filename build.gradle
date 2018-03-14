@@ -14,7 +14,29 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'bottom-bar'
 
+    publishedGroupId = 'com.roughike'
+    libraryName = 'bottom-bar'
+    artifact = 'bottom-bar'
+
+    libraryDescription = 'A custom view component that mimics the Material Design "Bottom navigation" pattern.'
+
+    siteUrl = 'https://github.com/roughike/BottomBar'
+    gitUrl = 'https://github.com/roughike/BottomBar.git'
+
+    libraryVersion = '2.3.1'
+
+    developerId = 'roughike'
+    developerName = 'Iiro Krankka'
+    developerEmail = 'iiro.krankka@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
 allprojects {
     repositories {
         google()
